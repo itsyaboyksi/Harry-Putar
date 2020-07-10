@@ -21,9 +21,9 @@ for i in range(60):
     ret, background = cap.read()
 
 
-# Flip the Image
-
-background = np.flip(background, axis=1)
+# Flip the Image in order to get a Mirror View
+#doing it because my ocd kicked in
+background = np.flip(background, axis=1) #setting "axis >= 1" will make the mirror flip   
 
 while(cap.isOpened()):
     
